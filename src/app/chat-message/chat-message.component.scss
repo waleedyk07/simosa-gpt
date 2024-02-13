@@ -1,0 +1,31 @@
+.chat_bubble {
+	width: fit-content;
+	max-width: 40%;
+
+	padding: 10px;
+	margin-bottom: 10px;
+
+	border-radius: 10px;
+
+	box-shadow: 3px 3px 5px 0px #dddddd;
+	
+	color: rgb(255 255 255 / 80%);
+	font-family: 'Poppins-Regular';
+	font-size: 12px;
+	font-weight: 400;
+
+}
+
+.user_class {
+	background: rgb(36, 150, 129);
+	background: linear-gradient(135deg, rgba(36, 150, 129, 1) 0%, rgba(51, 62, 160, 1) 100%);
+	margin-right: 10px;
+	margin-left: auto;
+}
+
+.bot_class {
+	background: rgb(51,62,160);
+	background: linear-gradient(135deg, rgba(51,62,160,1) 0%, rgba(188,20,54,1) 100%);
+	margin-left: 10px;
+	margin-right: auto;
+}

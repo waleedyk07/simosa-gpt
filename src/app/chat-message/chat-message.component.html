@@ -1,0 +1,3 @@
+<div class="chat_bubble" [ngClass]="{'user_class': message?.from === 0, 'bot_class' :  message?.from === 1 }">
+	{{ message?.message }}
+</div>

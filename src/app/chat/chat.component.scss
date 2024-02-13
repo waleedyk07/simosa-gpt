@@ -1,0 +1,33 @@
+.column {
+	padding: 10px;
+}
+
+.main-div {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+.title {
+	flex: 0 1 auto;
+
+	color: #464646;
+	font-family: 'Poppins-Regular';
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+
+	box-shadow: 3px 3px 5px 0px #dddddd;
+}
+
+.chat-window {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column-reverse;
+	overflow: auto;
+}
+
+.chat-input {
+	flex: 0 1 40px;
+	box-shadow: 0px -3px 5px 0px #d8d8d8;
+}

@@ -1,0 +1,42 @@
+div {
+
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+
+	input {
+		flex: 1 1 auto;
+		width: auto;
+		margin-right: 10px;
+
+		color: #464646;
+		font-family: 'Poppins-Regular';
+		font-size: 12px;
+		font-weight: 600;
+
+		border-radius: 10px;
+		border: 1px solid #464646;
+
+		padding: 10px;
+
+		&:focus {
+			outline: none;
+		}
+
+	}
+
+	button {
+		flex: 0 1 12px;
+		padding: 0px;
+		background-color: white;
+		border: none;
+
+		img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+			width: 32px;
+		}
+	}
+}
