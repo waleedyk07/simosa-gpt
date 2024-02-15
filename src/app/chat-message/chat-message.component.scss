@@ -5,10 +5,8 @@
 	padding: 10px;
 	margin-bottom: 10px;
 
-	border-radius: 10px;
-
 	box-shadow: 3px 3px 5px 0px #dddddd;
-	
+
 	color: rgb(255 255 255 / 80%);
 	font-family: 'Poppins-Regular';
 	font-size: 12px;
@@ -22,11 +20,13 @@
 	background: linear-gradient(135deg, rgba(36, 150, 129, 1) 0%, rgba(51, 62, 160, 1) 100%);
 	margin-right: 10px;
 	margin-left: auto;
+	border-radius: 20px 5px 20px 20px;
 }
 
 .bot_class {
-	background: rgb(51,62,160);
-	background: linear-gradient(135deg, rgba(51,62,160,1) 0%, rgba(184,46,74,1) 100%);
+	background: rgb(51, 62, 160);
+	background: linear-gradient(135deg, rgba(51, 62, 160, 1) 0%, rgba(184, 46, 74, 1) 100%);
 	margin-left: 10px;
 	margin-right: auto;
+	border-radius: 5px 20px 20px 20px;
 }
