@@ -17,7 +17,8 @@ export class IvanGptClientService {
 
 	constructor(private httpClient: HttpClient) { }
 
-	private IVAN_GPT_URL = 'http://127.0.0.0:5000/chat';
+	// private IVAN_GPT_URL = 'http://127.0.0.0:5000/chat';
+	private IVAN_GPT_URL = 'http://ec2-18-234-52-123.compute-1.amazonaws.com:5000/chat';
 
 	sendMessage(message: string): Observable<MessageHttpResponse> {
 		let req: MessageHttpRequest = {
