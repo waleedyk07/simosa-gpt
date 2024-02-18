@@ -1,9 +1,10 @@
 <div>
 
-	<input #messageInputField placeholder="Message ..." type="text" [(ngModel)]="newMessage" (keyup.enter)="sendMessage()">
+	<input #messageInputField placeholder="Message ..." type="text" [(ngModel)]="newMessage"
+		(keyup.enter)="sendMessage()">
 
 
-		<button (click)="sendMessage()">
-			<img src="./assets/send-icon.svg">
-		</button>
+	<button (click)="sendMessage()">
+		<img src="./assets/send-icon.svg">
+	</button>
 </div>

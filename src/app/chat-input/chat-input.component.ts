@@ -3,15 +3,16 @@ import { FormsModule } from '@angular/forms';
 import { MessageShareService } from '../service/message-share.service';
 import { IvanGptClientService } from '../service/ivan-gpt-client.service';
 import { Sender } from '../message';
+import { CommonModule } from '@angular/common';
 
 @Component({
 	selector: 'app-chat-input',
 	standalone: true,
-	imports: [FormsModule],
+	imports: [FormsModule, CommonModule],
 	templateUrl: './chat-input.component.html',
 	styleUrl: './chat-input.component.scss'
 })
-export class ChatInputComponent implements AfterViewInit{
+export class ChatInputComponent implements AfterViewInit {
 
 	constructor(private messageShareService: MessageShareService, private ivanGptClientService: IvanGptClientService) { }
 
