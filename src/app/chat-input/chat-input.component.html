@@ -1,6 +1,6 @@
 <div>
 
-	<input #messageInputField placeholder="Message ..." type="text" [(ngModel)]="newMessage">
+	<input #messageInputField placeholder="Message ..." type="text" [(ngModel)]="newMessage" (keyup.enter)="sendMessage()">
 
 
 		<button (click)="sendMessage()">
