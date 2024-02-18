@@ -33,14 +33,15 @@ div {
 		border: none;
 		border-radius: 100px;
 
+		&:active {
+			background-color: rgb(228, 228, 228);
+		}
+		
 		img{
 			display: block;
 			margin: 5px;
 			height: 40px;
 		}
 
-		&:active {
-			background-color: rgb(228, 228, 228);
-		}
 	}
 }
