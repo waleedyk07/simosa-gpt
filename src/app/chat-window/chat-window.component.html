@@ -1,3 +1,4 @@
 <div *ngFor="let message of messages">
 	<app-chat-message [message]="message"></app-chat-message>
 </div>
+<div *ngIf="$isLoading | async" class="dot-flashing"></div>

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { Message } from '../message';
 
 @Injectable({
@@ -12,9 +12,15 @@ export class MessageShareService {
 	private message: Subject<Message> = new Subject<Message>();
 	newMessage: Observable<Message> = this.message.asObservable();
 
+	private isLoadingSubject: BehaviorSubject<Boolean> = new BehaviorSubject<Boolean>(false);
+	isLoading: Observable<Boolean> = this.isLoadingSubject.asObservable();
+
 	shareMessage(message: Message) {
 		this.message.next(message);
 	}
 
+	setLoader(flag: boolean) {
+		this.isLoadingSubject.next(flag);
+	}
 
 }
