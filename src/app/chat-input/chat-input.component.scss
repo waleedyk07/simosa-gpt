@@ -33,10 +33,10 @@ div {
 		border: none;
 		border-radius: 100px;
 
-		&:active {
+		&:focus, &:active {
 			background-color: rgb(228, 228, 228);
 		}
-		
+
 		img{
 			display: block;
 			margin: 5px;
