@@ -29,15 +29,18 @@ div {
 	button {
 		flex: 0 1 12px;
 		padding: 0px;
-		background-color: white;
+		background-color: rgb(255, 255, 255);
 		border: none;
+		border-radius: 100px;
 
 		img{
 			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-			width: 50px;
+			margin: 5px;
+			height: 40px;
+		}
+
+		&:active {
+			background-color: rgb(228, 228, 228);
 		}
 	}
 }
